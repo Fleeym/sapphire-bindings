@@ -48,6 +48,7 @@ GEODE_MEMBER_CHECK(SimplePlayer, m_hasCustomGlowColor, 0x29c);
 
 GEODE_MEMBER_CHECK(GJBaseGameLayer, m_gameState, 0x1a8);
 GEODE_MEMBER_CHECK(GJBaseGameLayer, m_level, 0x890);
+GEODE_MEMBER_CHECK(GJBaseGameLayer, m_effectManager, 0x960);
 GEODE_MEMBER_CHECK(GJBaseGameLayer, m_player1, 0xdb0);
 GEODE_MEMBER_CHECK(GJBaseGameLayer, m_player2, 0xdb8);
 GEODE_MEMBER_CHECK(GJBaseGameLayer, m_unknownCD0, 0xdf0);
@@ -60,7 +61,7 @@ GEODE_MEMBER_CHECK(GJBaseGameLayer, m_isPracticeMode, 0x3208);
 GEODE_MEMBER_CHECK(GJBaseGameLayer, m_levelLength, 0x3238);
 GEODE_MEMBER_CHECK(GJBaseGameLayer, m_queuedButtons, 0x3300);
 GEODE_MEMBER_CHECK(GJBaseGameLayer, m_uiLayer, 0x3460);
-GEODE_MEMBER_CHECK(GJBaseGameLayer, m_sections, 0x34a8);
+GEODE_MEMBER_CHECK(GJBaseGameLayer, m_sections, 0x3498);
 
 GEODE_MEMBER_CHECK(PlayLayer, m_coinArray, 0x36d0);
 GEODE_MEMBER_CHECK(PlayLayer, m_circleWaveArray, 0x37a0);
@@ -76,7 +77,7 @@ GEODE_MEMBER_CHECK(PlayerObject, m_ghostTrail, 0x708);
 GEODE_MEMBER_CHECK(PlayerObject, m_iconSprite, 0x710);
 GEODE_MEMBER_CHECK(PlayerObject, m_waveTrail, 0x788);
 GEODE_MEMBER_CHECK(PlayerObject, m_robotSprite, 0x870);
-GEODE_MEMBER_CHECK(PlayerObject, m_unk708, 0x8e0);
+GEODE_MEMBER_CHECK(PlayerObject, m_landParticles1, 0x8e0);
 GEODE_MEMBER_CHECK(PlayerObject, m_hasCustomGlowColor, 0x950);
 GEODE_MEMBER_CHECK(PlayerObject, m_isDart, 0x98c);
 GEODE_MEMBER_CHECK(PlayerObject, m_vehicleSize, 0x9c0);
@@ -94,6 +95,12 @@ GEODE_MEMBER_CHECK(GameManager, m_playLayer, 0x1d8);
 GEODE_MEMBER_CHECK(GameManager, m_levelEditorLayer, 0x1e0);
 GEODE_MEMBER_CHECK(GameManager, m_gameLayer, 0x1e8);
 
+GEODE_MEMBER_CHECK(FMODAudioEngine, m_musicVolume, 0x1e8);
+GEODE_MEMBER_CHECK(FMODAudioEngine, m_sfxVolume, 0x1ec);
+GEODE_MEMBER_CHECK(FMODAudioEngine, m_pulse1, 0x1f8);
+GEODE_MEMBER_CHECK(FMODAudioEngine, m_pulse2, 0x1fc);
+GEODE_MEMBER_CHECK(FMODAudioEngine, m_pulse3, 0x200);
+GEODE_MEMBER_CHECK(FMODAudioEngine, m_metering, 0x208);
 GEODE_MEMBER_CHECK(FMODAudioEngine, m_system, 0x218);
 
 GEODE_SIZE_CHECK(GJGameState, 0x6e8);
@@ -140,7 +147,10 @@ GEODE_MEMBER_CHECK(EditorUI, m_selectedMode, 0x4e8);
 GEODE_MEMBER_CHECK(EditorUI, m_selectedObject, 0x528);
 GEODE_MEMBER_CHECK(EditorUI, m_selectedTab, 0x548);
 
-GEODE_MEMBER_CHECK(ChallengesPage, m_dots, 0x290)
-GEODE_MEMBER_CHECK(ChallengesPage, m_challengeNodes, 0x2B8)
+GEODE_MEMBER_CHECK(ChallengesPage, m_dots, 0x290);
+GEODE_MEMBER_CHECK(ChallengesPage, m_challengeNodes, 0x2B8);
+
+GEODE_MEMBER_CHECK(GJEffectManager, m_colorActionDict, 0x260);
+//GEODE_MEMBER_CHECK(GJEffectManager, m_itemIDs, 0x318);
 
 #endif
